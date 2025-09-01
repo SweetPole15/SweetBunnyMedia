@@ -6,20 +6,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
       background: url('img/fondo.jpg') no-repeat center center / cover;
       font-family: 'Inter', sans-serif;
       color: white;
+      height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      height: 100vh;
+      align-items: center;
       text-align: center;
       position: relative;
     }
@@ -30,86 +30,67 @@
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.3); /* más claro */
+      background-color: rgba(0, 0, 0, 0.4); /* leve sombra para resaltar el texto */
       z-index: 0;
     }
 
-    h1, .subtitle, .buttons, .note {
+    .content {
       z-index: 1;
       position: relative;
     }
 
     h1 {
-      font-size: 3.5rem;
-      margin-bottom: 1rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
     }
 
-    .subtitle {
-      font-size: 1.4rem;
+    p.subtitle {
+      font-size: 1.2rem;
       margin-bottom: 2rem;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      color: #ddd;
     }
 
     .buttons {
       display: flex;
-      gap: 1.5rem;
-      margin-bottom: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
     }
 
     .buttons a {
-      padding: 1rem 2rem;
-      border-radius: 30px;
+      display: inline-block;
+      width: 250px;
+      padding: 1rem;
+      border: 2px solid white;
+      border-radius: 40px;
       text-decoration: none;
       font-weight: bold;
       font-size: 1.1rem;
-      transition: background 0.3s, transform 0.2s;
       color: white;
-      background: #e91e63; /* rosa fuerte */
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      background: rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
     }
 
     .buttons a:hover {
-      background: #c2185b;
-      transform: scale(1.05);
-    }
-
-    .note {
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      color: #eee;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-    }
-
-    .note a {
-      color: #ff80ab;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .note a:hover {
-      text-decoration: underline;
+      background: white;
+      color: black;
     }
   </style>
 </head>
 <body>
-  <h1>Sweet Bunny Pole</h1>
-  <p class="subtitle">Pole Dance • Exotic Flow • Fitness</p>
+  <div class="content">
+    <h1>Sweet Bunny Pole</h1>
+    <p class="subtitle">Exotic Flow • Pole Dance • Fitness</p>
 
-  <div class="buttons">
-    <a href="https://www.instagram.com/polemt15/" target="_blank">Instagram</a>
-    <a href="mailto:piar@dianarider.com">Contact</a>
-    <a href="https://t.me/TU_USUARIO_TELEGRAM" target="_blank">Telegram</a>
-    <a href="https://onlyfans.com/TU_USUARIO" target="_blank">OnlyFans</a>
+    <div class="buttons">
+      <a href="https://onlyfans.com/TU_USUARIO" target="_blank">🔥 OnlyFans</a>
+      <a href="https://www.instagram.com/polemt15/" target="_blank">📸 Instagram</a>
+      <a href="https://t.me/TU_USUARIO" target="_blank">💬 Telegram</a>
+    </div>
   </div>
-
-  <p class="note">
-    📩 For collaborations or inquiries, message me on 
-    <a href="https://www.instagram.com/polemt15/" target="_blank">Instagram</a>.
-  </p>
 </body>
 </html>
+
+
 
 
